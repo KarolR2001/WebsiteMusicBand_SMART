@@ -10,7 +10,7 @@
   --light-second: #c3c2c8;
   --light-hover: #1a1a1c;
   --light-text: #d2a64e;
-  --blue: #007497;
+  --blue: #d2a64ea2;
   --white: #fff;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --font-family: cursive;
@@ -52,10 +52,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: clamp(16px, 6vw, 30px);
   font-weight: 550;
   color: #d2a64e;
   margin-bottom: 4%;
+  flex-wrap: nowrap;
 }
 
 .calendar-body {
@@ -200,7 +201,6 @@
 .calendar-days div.curr-date:hover {
   background-color: var(--blue);
   color: var(--white);
-  border-radius: 30%;
 }
 
 .calendar-days div.curr-date span {

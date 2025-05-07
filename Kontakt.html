@@ -6,71 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Zespół SMART Gwarantowana dobra zabawa</title>
     <link rel="icon" type="image/png" sizes="919x792" href="assets/img/ikona.png">
-    <link rel="icon" type="image/png" sizes="919x792" href="assets/img/ikona.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body style="background: #1a1a1c;">
-    <div class="d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center justify-content-xxl-center align-items-xxl-center sticky-top div-logo" id="logo" style="background: #1a1a1c"><a class="btn btn-outline-warning text-nowrap text-center border rounded-0 border-warning float-start button-powrot" role="button" href="index.html" style="border-left-style: none;">POWRÓT</a><img class="img-fluid d-flex justify-content-center align-items-center pulse animated mb-4" src="assets/img/logo.png" style="width: 320px;margin-top: 46px;" loading="lazy" alt="Logo Zespołu SMART"><!-- Kontener dla alertu sukcesu -->
-<div id="successAlertContainer" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
-  <div id="successAlert" class="alert alert-success" role="alert" style="background-color: #d4edda; color: #155724; border-color: #c3e6cb;">
-    <i class="bi bi-emoji-sunglasses-fill me-3" style="color: #155724;"></i> Wiadomość została pomyślnie wysłana. Dziękujemy za kontakt!
-  </div>
-</div>
+    <a class="btn btn-outline-warning text-nowrap text-center border rounded-0 border-warning button-powrot" role="button" href="index.html">POWRÓT</a>
+    
+    <div class="container text-center py-4">
+        <img class="img-fluid pulse animated" src="assets/img/logo.png" width="250" style="margin-top: 20px;" alt="Logo Zespołu SMART">
+    </div>
 
-<!-- Kontener dla alertu błędu -->
-<div id="dangerAlertContainer" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
-  <div id="dangerAlert" class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24; border-color: #f5c6cb;">
-    <i class="bi bi-emoji-frown-fill me-3" style="color: #721c24;"></i> Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.
-  </div>
-</div>
+    <!-- Kontener dla alertu sukcesu -->
+    <div id="successAlertContainer" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
+        <div id="successAlert" class="alert alert-success" role="alert" style="background-color: #d4edda; color: #155724; border-color: #c3e6cb;">
+            <i class="bi bi-emoji-sunglasses-fill me-3" style="color: #155724;"></i> Wiadomość została pomyślnie wysłana. Dziękujemy za kontakt!
+        </div>
+    </div>
 
-<!-- Kontener dla alertu informującego o pustych polach formularza -->
-<div id="dangerAlertContainerPusty" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
-  <div id="dangerAlertPusty" class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24; border-color: #f5c6cb;">
-    <i class="bi bi-emoji-frown-fill me-3" style="color: #721c24;"></i> Prosimy wypełnić wszystkie pola formularza przed wysłaniem wiadomości.
-  </div>
-</div>
-</div><section id="Kontakt" class="text-start d-grid">
-    <section class="position-relative py-4 py-xl-5">
-        <div class="container position-relative">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 offset-md-0 text-nowrap">
-                    <div class="card text-nowrap" style="padding: 0px; margin-bottom: 24px;">
-                        <div class="card-body text-nowrap" style="padding: 22px; margin-bottom: 14px;">
-                            <h1 style="color: white;">Kontakt:</h1>
-                            <hr style="color: #d2a64e;" />
-                            <h4 style="color: white;">Krystian Hybel</h4>
-                            <!-- Dodane klasy "phone-animation" dla efektu animacji -->
-                            <p class="phone-animation" style="color: white; margin-left: 15px;"><img src="assets/img/call.png" loading="lazy" style="width: 38px; height: 38px; margin: 0px; margin-right: 15px;" />+48 789 248 602</p>
-                            <h4 style="color: white;">Damian Budnik</h4>
-                            <!-- Dodane klasy "phone-animation" dla efektu animacji -->
-                            <p class="phone-animation" style="color: white; margin-left: 15px;"><img src="assets/img/call.png" loading="lazy" style="width: 38px; height: 38px; margin: 0px; margin-right: 15px;" />+48 788 656 215</p>
+    <!-- Kontener dla alertu błędu -->
+    <div id="dangerAlertContainer" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
+        <div id="dangerAlert" class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24; border-color: #f5c6cb;">
+            <i class="bi bi-emoji-frown-fill me-3" style="color: #721c24;"></i> Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.
+        </div>
+    </div>
+
+    <!-- Kontener dla alertu informującego o pustych polach formularza -->
+    <div id="dangerAlertContainerPusty" style="display: none; position: fixed; top: 0; right: 0; max-width: 80%; margin: 10px;">
+        <div id="dangerAlertPusty" class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24; border-color: #f5c6cb;">
+            <i class="bi bi-emoji-frown-fill me-3" style="color: #721c24;"></i> Prosimy wypełnić wszystkie pola formularza przed wysłaniem wiadomości.
+        </div>
+    </div>
+
+    <section id="Kontakt" class="text-start d-grid">
+        <section class="position-relative py-4 py-xl-5">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 offset-md-0 text-nowrap">
+                        <div class="card text-nowrap" style="padding: 0px; margin-bottom: 24px;">
+                            <div class="card-body text-nowrap" style="padding: 22px; margin-bottom: 14px;">
+                                <h1 style="color: #d2a64e;">Kontakt:</h1>
+                                <hr style="color: #d2a64e;" />
+                                <h4 style="color: white;">Krystian Hybel</h4>
+                                <p  style="color: white; margin-left: 15px;"><img src="assets/img/call.png" loading="lazy" style="width: 30px; height: 30px; margin: 0px; margin-right: 15px;" />+48 789 248 602</p>
+                                <h4 style="color: white;">Damian Budnik</h4>
+                                <p style="color: white; margin-left: 15px;"><img src="assets/img/call.png" loading="lazy" style="width: 30px; height: 30px; margin: 0px; margin-right: 15px;" />+48 788 656 215</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card mb-5" style="margin-bottom: 24px;">
-                        <div class="card-body p-sm-3">
-                            <h2 class="text-animation text-center mb-4">Napisz do nas...</h2>
-                            <form id="contactForm" method="POST" action="send_email.php">
-                                <div class="mb-3"><input id="form3Example1" class="form-control" type="text" name="name" placeholder="Imię i Nazwisko" /></div>
-                                <div class="mb-3"><input type="tel" id="typePhone" class="form-control" name="phone" placeholder="Numer telefonu" /></div>
-                                <div class="mb-3"><input id="form3Example3" class="form-control" type="email" name="email" placeholder="Email" /></div>
-                                <div class="mb-3"><textarea id="textAreaExample1" class="form-control" name="message" rows="6" placeholder="Wiadomość..."></textarea></div>
-                                
-                                <button class="btn btn-wyslij mb-8 w-100" type="submit" style="background-color: #d2a64e;">Wyślij</button>
-                            </form>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card mb-5" style="margin-bottom: 24px;">
+                            <div class="card-body p-sm-3">
+                                <h2 class="text-animation text-center mb-4">Napisz do nas...</h2>
+                                <form id="contactForm" method="POST" action="send_email.php">
+                                    <div class="mb-3"><input id="form3Example1" class="form-control" type="text" name="name" placeholder="Imię i Nazwisko" /></div>
+                                    <div class="mb-3"><input type="tel" id="typePhone" class="form-control" name="phone" placeholder="Numer telefonu" /></div>
+                                    <div class="mb-3"><input id="form3Example3" class="form-control" type="email" name="email" placeholder="Email" /></div>
+                                    <div class="mb-3"><textarea id="textAreaExample1" class="form-control" name="message" rows="6" placeholder="Wiadomość..."></textarea></div>
+                                    
+                                    <button class="btn btn-wyslij mb-8 w-100" type="submit" style="background-color: #d2a64e;">Wyślij</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
-</section>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
